@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {
+
+            $('#btnSubmit').click(function(){
+
+              // Set Text
+              $('#bdy h1').text("Welcome to JQuery");
+
+              // Set HTML
+              $('#bdy p').html("jQuery is a <b> JavaScript </b> library");
+
+              // Set Attr
+              $('#btnSubmit').attr('value','Click Here');
+
+              // Set Value
+              $('#txtName').val('Ratan Tata');
+
+            });
+
+         });
+
+
+
+     </script>
+<head>
+   <body>
+   <div id="bdy">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <div id='div2'>
+      Enter Name <input type="text" id="txtName" name="Name">
+      <input type="submit" id="btnSubmit" value="submit" >
+   </div>
+</body>
+</html>
